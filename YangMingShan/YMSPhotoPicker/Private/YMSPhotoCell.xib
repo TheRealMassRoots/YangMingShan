@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,15 +17,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fuA-cX-VUz"/>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9A-FV-tJG">
-                        <frame key="frameInset" minX="72" minY="128" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9A-FV-tJG">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="Z9A-FV-tJG" secondAttribute="bottom" id="5dr-tn-xsB"/>
+                <constraint firstAttribute="trailing" secondItem="Z9A-FV-tJG" secondAttribute="trailing" id="CYZ-SZ-kR8"/>
+                <constraint firstItem="Z9A-FV-tJG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="auu-2E-a6F"/>
                 <constraint firstAttribute="trailing" secondItem="fuA-cX-VUz" secondAttribute="trailing" id="cDk-je-E9K"/>
+                <constraint firstItem="Z9A-FV-tJG" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="haf-gR-fGj"/>
                 <constraint firstAttribute="bottom" secondItem="fuA-cX-VUz" secondAttribute="bottom" id="kwD-cK-9OX"/>
                 <constraint firstItem="fuA-cX-VUz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pc6-fv-gEV"/>
                 <constraint firstItem="fuA-cX-VUz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yau-Gg-xoc"/>
@@ -32,8 +35,9 @@
             <size key="customSize" width="385" height="385"/>
             <connections>
                 <outlet property="imageView" destination="fuA-cX-VUz" id="f1f-f1-WZW"/>
+                <outlet property="infoBar" destination="Z9A-FV-tJG" id="1K7-R6-2zq"/>
             </connections>
-            <point key="canvasLocation" x="-171" y="-11"/>
+            <point key="canvasLocation" x="-171.5" y="-11.5"/>
         </collectionViewCell>
     </objects>
 </document>

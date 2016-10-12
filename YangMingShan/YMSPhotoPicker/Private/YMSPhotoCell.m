@@ -15,6 +15,7 @@
 @interface YMSPhotoCell()
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIView *infoBar;
 @property (nonatomic, weak) PHImageManager *imageManager;
 @property (nonatomic, assign) PHImageRequestID imageRequestID;
 @property (nonatomic, assign) BOOL animateSelection;
@@ -29,7 +30,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-
+    
     [self prepareForReuse];
 }
 
@@ -37,12 +38,18 @@
     [super prepareForReuse];
 
     [self cancelImageRequest];
-
+    [self setupInfoBar];
+    
     self.imageView.image = nil;
 }
 
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
+}
+
+- (void)setMediaType:(PHAssetMediaType)mediaType {
+    _mediaType = mediaType;
+    _infoBar.hidden = _mediaType != PHAssetMediaTypeVideo;
 }
 
 - (void)dealloc {
@@ -66,6 +73,11 @@
 }
 
 #pragma mark - Privates
+
+- (void)setupInfoBar {
+    [_infoBar setBackgroundColor:[UIColor blackColor]];
+    _infoBar.alpha = 0.5;
+}
 
 - (void)setThumbnailImage:(UIImage *)thumbnailImage {
     _thumbnailImage = thumbnailImage;
