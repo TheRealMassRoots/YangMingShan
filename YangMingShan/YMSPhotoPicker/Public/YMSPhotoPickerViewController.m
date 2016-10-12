@@ -512,7 +512,7 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
     weakFetchAlbums = fetchAlbums = ^void(PHFetchResult *collections) {
         // create fecth options
         PHFetchOptions *options = [PHFetchOptions new];
-        options.predicate = [NSPredicate predicateWithFormat:@"mediaType = %d",PHAssetMediaTypeImage];
+        options.predicate = [NSPredicate predicateWithFormat:@"mediaType = %d OR mediaType = %d",PHAssetMediaTypeImage, PHAssetMediaTypeVideo];
         options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:NO]];
 
         for (PHCollection *collection in collections) {
