@@ -28,12 +28,6 @@
 @property (nonatomic, assign) PHAssetMediaType mediaType;
 
 /**
- * @brief Set target method to this to recognize long press gesture.
- *
- */
-@property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
-
-/**
  * @brief Load the photo from photo library and display it on cell.
  *
  * @param manager Reuse current image manager from photo picker.

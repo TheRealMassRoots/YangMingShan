@@ -30,9 +30,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
 
-    self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] init];
-    [self addGestureRecognizer:self.longPressGestureRecognizer];
-
     [self prepareForReuse];
 }
 

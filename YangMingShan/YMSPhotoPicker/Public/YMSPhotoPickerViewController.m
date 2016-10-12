@@ -16,8 +16,8 @@
 #import "YMSCameraCell.h"
 #import "YMSPhotoCell.h"
 
-static NSString * const YMSCameraCellNibName = @"YMSCameraCell";
-static NSString * const YMSPhotoCellNibName = @"YMSPhotoCell";
+static NSString *const YMSCameraCellNibName = @"YMSCameraCell";
+static NSString *const YMSPhotoCellNibName = @"YMSPhotoCell";
 static const NSUInteger YMSNumberOfPhotoColumns = 3;
 static const CGFloat YMSNavigationBarMaxTopSpace = 44.0;
 static const CGFloat YMSNavigationBarOriginalTopSpace = 0.0;
@@ -30,9 +30,9 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
 @property (nonatomic, weak) IBOutlet UIView *navigationBarBackgroundView;
 @property (nonatomic, weak) IBOutlet UICollectionView *photoCollectionView;
 @property (nonatomic, strong) PHImageManager *imageManager;
-@property (nonatomic, weak) AVCaptureSession *session;
 @property (nonatomic, strong) NSArray *collectionItems;
 @property (nonatomic, strong) NSDictionary *currentCollectionItem;
+@property (nonatomic, weak) AVCaptureSession *session;
 @property (nonatomic, assign) CGSize cellPortraitSize;
 @property (nonatomic, assign) CGSize cellLandscapeSize;
 
@@ -49,7 +49,6 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
 - (instancetype)init {
     self = [super initWithNibName:NSStringFromClass(self.class) bundle:[NSBundle bundleForClass:self.class]];
     if (self) {
-        self.numberOfPhotoToSelect = 1;
     }
     return self;
 }
@@ -65,10 +64,13 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
     self.photoCollectionView.delegate = self;
     self.photoCollectionView.dataSource = self;
     
-    UINib *cellNib = [UINib nibWithNibName:YMSCameraCellNibName bundle:[NSBundle bundleForClass:YMSCameraCell.class]];
-    [self.photoCollectionView registerNib:cellNib forCellWithReuseIdentifier:YMSCameraCellNibName];
-    cellNib = [UINib nibWithNibName:YMSPhotoCellNibName bundle:[NSBundle bundleForClass:YMSPhotoCell.class]];
-    [self.photoCollectionView registerNib:cellNib forCellWithReuseIdentifier:YMSPhotoCellNibName];
+    [self.photoCollectionView registerNib:[UINib nibWithNibName:YMSCameraCellNibName
+                                                         bundle:[NSBundle bundleForClass:YMSCameraCell.class]]
+               forCellWithReuseIdentifier:YMSCameraCellNibName];
+    
+    [self.photoCollectionView registerNib:[UINib nibWithNibName:YMSPhotoCellNibName
+                                                         bundle:[NSBundle bundleForClass:YMSPhotoCell.class]]
+               forCellWithReuseIdentifier:YMSPhotoCellNibName];
 
     [self fetchCollections];
 

@@ -26,12 +26,6 @@
 @property (nonatomic, weak) id<YMSPhotoPickerViewControllerDelegate> delegate;
 
 /**
- * @brief Set numberOfPhotoToSelect to limit maximum number of photo selections. Default value is 1 and you can set it to 0 for unlimited selections.
- *
- */
-@property (nonatomic, assign) NSUInteger numberOfPhotoToSelect;
-
-/**
  * @brief Use YMSPhotoPickerTheme to customize the UI appearance for YMSPhotoPickerViewController, YMSSinglePhotoViewController, and YMSAlbumPickerViewController. See YMSPhotoPickerTheme.h for more details.
  *
  */
