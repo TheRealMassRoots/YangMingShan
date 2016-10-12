@@ -35,8 +35,6 @@
 		513073351D1B8D9000C98705 /* YMSCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513073271D1B8D9000C98705 /* YMSCameraCell.xib */; };
 		513073361D1B8D9000C98705 /* YMSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 513073291D1B8D9000C98705 /* YMSPhotoCell.m */; };
 		513073371D1B8D9000C98705 /* YMSPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5130732A1D1B8D9000C98705 /* YMSPhotoCell.xib */; };
-		513073381D1B8D9000C98705 /* YMSSinglePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130732C1D1B8D9000C98705 /* YMSSinglePhotoViewController.m */; };
-		513073391D1B8D9000C98705 /* YMSSinglePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5130732D1D1B8D9000C98705 /* YMSSinglePhotoViewController.xib */; };
 		513073411D1B8DC000C98705 /* UIViewController+YMSPhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130733B1D1B8DC000C98705 /* UIViewController+YMSPhotoHelper.m */; };
 		513073421D1B8DC000C98705 /* YMSPhotoPickerTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130733D1D1B8DC000C98705 /* YMSPhotoPickerTheme.m */; };
 		513073431D1B8DC000C98705 /* YMSPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130733F1D1B8DC000C98705 /* YMSPhotoPickerViewController.m */; };
@@ -55,8 +53,6 @@
 		51687A2C1D335D080071643B /* YMSCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513073271D1B8D9000C98705 /* YMSCameraCell.xib */; };
 		51687A2D1D335D080071643B /* YMSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 513073291D1B8D9000C98705 /* YMSPhotoCell.m */; };
 		51687A2E1D335D080071643B /* YMSPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5130732A1D1B8D9000C98705 /* YMSPhotoCell.xib */; };
-		51687A2F1D335D080071643B /* YMSSinglePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130732C1D1B8D9000C98705 /* YMSSinglePhotoViewController.m */; };
-		51687A301D335D080071643B /* YMSSinglePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5130732D1D1B8D9000C98705 /* YMSSinglePhotoViewController.xib */; };
 		519140DF1D05571A002B4C5B /* YMSPhotoPickerAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F2EEE81CEC4D5F006DFC4B /* YMSPhotoPickerAssets.xcassets */; };
 		51F2EEE91CEC4D5F006DFC4B /* YMSPhotoPickerAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F2EEE81CEC4D5F006DFC4B /* YMSPhotoPickerAssets.xcassets */; };
 		51FF32391D129D020029197B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FF32291D129D020029197B /* Assets.xcassets */; };
@@ -120,9 +116,6 @@
 		513073281D1B8D9000C98705 /* YMSPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMSPhotoCell.h; path = YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.h; sourceTree = SOURCE_ROOT; };
 		513073291D1B8D9000C98705 /* YMSPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMSPhotoCell.m; path = YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.m; sourceTree = SOURCE_ROOT; };
 		5130732A1D1B8D9000C98705 /* YMSPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YMSPhotoCell.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.xib; sourceTree = SOURCE_ROOT; };
-		5130732B1D1B8D9000C98705 /* YMSSinglePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMSSinglePhotoViewController.h; path = YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.h; sourceTree = SOURCE_ROOT; };
-		5130732C1D1B8D9000C98705 /* YMSSinglePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMSSinglePhotoViewController.m; path = YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.m; sourceTree = SOURCE_ROOT; };
-		5130732D1D1B8D9000C98705 /* YMSSinglePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YMSSinglePhotoViewController.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.xib; sourceTree = SOURCE_ROOT; };
 		5130733A1D1B8DC000C98705 /* UIViewController+YMSPhotoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+YMSPhotoHelper.h"; path = "YangMingShan/YMSPhotoPicker/Public/UIViewController+YMSPhotoHelper.h"; sourceTree = SOURCE_ROOT; };
 		5130733B1D1B8DC000C98705 /* UIViewController+YMSPhotoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+YMSPhotoHelper.m"; path = "YangMingShan/YMSPhotoPicker/Public/UIViewController+YMSPhotoHelper.m"; sourceTree = SOURCE_ROOT; };
 		5130733C1D1B8DC000C98705 /* YMSPhotoPickerTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMSPhotoPickerTheme.h; path = YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerTheme.h; sourceTree = SOURCE_ROOT; };
@@ -295,9 +288,6 @@
 				513073281D1B8D9000C98705 /* YMSPhotoCell.h */,
 				513073291D1B8D9000C98705 /* YMSPhotoCell.m */,
 				5130732A1D1B8D9000C98705 /* YMSPhotoCell.xib */,
-				5130732B1D1B8D9000C98705 /* YMSSinglePhotoViewController.h */,
-				5130732C1D1B8D9000C98705 /* YMSSinglePhotoViewController.m */,
-				5130732D1D1B8D9000C98705 /* YMSSinglePhotoViewController.xib */,
 			);
 			name = YMSPhotoPicker;
 			path = YangMingShan/YMSPhotoPicker;
@@ -413,6 +403,7 @@
 				TargetAttributes = {
 					5171ACE61CE9A49B00B72748 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3D9KFQXSM6;
 					};
 					5171ACFF1CE9A49C00B72748 = {
 						CreatedOnToolsVersion = 7.3;
@@ -459,7 +450,6 @@
 				513073351D1B8D9000C98705 /* YMSCameraCell.xib in Resources */,
 				513073441D1B8DC000C98705 /* YMSPhotoPickerViewController.xib in Resources */,
 				513073371D1B8D9000C98705 /* YMSPhotoCell.xib in Resources */,
-				513073391D1B8D9000C98705 /* YMSSinglePhotoViewController.xib in Resources */,
 				513073311D1B8D9000C98705 /* YMSAlbumCell.xib in Resources */,
 				51F2EEE91CEC4D5F006DFC4B /* YMSPhotoPickerAssets.xcassets in Resources */,
 				51FF32391D129D020029197B /* Assets.xcassets in Resources */,
@@ -490,7 +480,6 @@
 				51687A2E1D335D080071643B /* YMSPhotoCell.xib in Resources */,
 				513073011D13D03500C98705 /* Main-swift.storyboard in Resources */,
 				519140DF1D05571A002B4C5B /* YMSPhotoPickerAssets.xcassets in Resources */,
-				51687A301D335D080071643B /* YMSSinglePhotoViewController.xib in Resources */,
 				51687A2C1D335D080071643B /* YMSCameraCell.xib in Resources */,
 				511BC6231D13B3B600738FD4 /* LaunchScreen.storyboard in Resources */,
 				51687A221D335CE80071643B /* YMSPhotoPickerViewController.xib in Resources */,
@@ -512,7 +501,6 @@
 				511BC6051D13B27400738FD4 /* AppDelegate.m in Sources */,
 				511BC6101D13B2C400738FD4 /* DemoPhotoViewController.m in Sources */,
 				5130732F1D1B8D9000C98705 /* UITableViewCell+YMSConfig.m in Sources */,
-				513073381D1B8D9000C98705 /* YMSSinglePhotoViewController.m in Sources */,
 				511BC6201D13B39E00738FD4 /* main.m in Sources */,
 				513073411D1B8DC000C98705 /* UIViewController+YMSPhotoHelper.m in Sources */,
 				511BC6061D13B27400738FD4 /* DemoListViewController.m in Sources */,
@@ -553,7 +541,6 @@
 				51687A291D335D080071643B /* YMSAlbumPickerViewController.m in Sources */,
 				51687A271D335D080071643B /* YMSAlbumCell.m in Sources */,
 				511BC61B1D13B33D00738FD4 /* DemoImageViewCell.swift in Sources */,
-				51687A2F1D335D080071643B /* YMSSinglePhotoViewController.m in Sources */,
 				51687A2B1D335D080071643B /* YMSCameraCell.m in Sources */,
 				51687A231D335D080071643B /* UIViewController+YMSPhotoHelper.m in Sources */,
 				511BC6191D13B33D00738FD4 /* DemoListViewController.swift in Sources */,
@@ -691,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3D9KFQXSM6;
 				INFOPLIST_FILE = "$(SRCROOT)/YangMingShanDemo/ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.YangMingShanDemo;
@@ -703,6 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3D9KFQXSM6;
 				INFOPLIST_FILE = "$(SRCROOT)/YangMingShanDemo/ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.YangMingShanDemo;

@@ -22,16 +22,16 @@
 @property (nonatomic, strong) NSString *representedAssetIdentifier;
 
 /**
+ * @brief It is the identifier for photo picker to display single photo in current album.
+ *
+ */
+@property (nonatomic, assign) PHAssetMediaType mediaType;
+
+/**
  * @brief Set target method to this to recognize long press gesture.
  *
  */
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
-
-/**
- * @brief Set selection order to this to display on UILabel.
- *
- */
-@property (nonatomic, assign) NSUInteger selectionOrder;
 
 /**
  * @brief Load the photo from photo library and display it on cell.
@@ -41,18 +41,5 @@
  * @param size The target photo size.
  */
 - (void)loadPhotoWithManager:(PHImageManager *)manager forAsset:(PHAsset *)asset targetSize:(CGSize)size;
-
-/**
- * @brief Set this to make cell will animate when it has been selected.
- *
- */
-- (void)setNeedsAnimateSelection;
-
-/**
- * @brief Display highlighted and unhighlighted animation.
- *
- * @param highlighted The animation type for highlighted and unhighlighted.
- */
-- (void)animateHighlight:(BOOL)highlighted;
 
 @end
